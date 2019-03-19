@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01542D66223D99C6005CD06B /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01542D65223D99C6005CD06B /* native-lib.cpp */; };
+		016593D42210FD13001A8942 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D32210FD13001A8942 /* AssetsLibrary.framework */; };
+		016593D62210FD1A001A8942 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D52210FD1A001A8942 /* CoreGraphics.framework */; };
+		016593D82210FD21001A8942 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D72210FD21001A8942 /* CoreMedia.framework */; };
+		016593DA2210FD28001A8942 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D92210FD28001A8942 /* CoreFoundation.framework */; };
+		016593DC2210FD31001A8942 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593DB2210FD31001A8942 /* Accelerate.framework */; };
+		016593E322110185001A8942 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016593E222110185001A8942 /* Default-568h@2x.png */; };
+		016593E62211032B001A8942 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 016593E52211032B001A8942 /* OpenCVWrapper.mm */; };
+		016593EE221105AF001A8942 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593ED221105AF001A8942 /* opencv2.framework */; };
 		01B4F8FC2201534000E8454B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4F8FB2201534000E8454B /* AppDelegate.swift */; };
 		01B4F8FE2201534000E8454B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4F8FD2201534000E8454B /* ViewController.swift */; };
 		01B4F9012201534000E8454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B4F8FF2201534000E8454B /* Main.storyboard */; };
@@ -34,17 +43,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B4F8F82201534000E8454B /* Senior Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senior Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01542D65223D99C6005CD06B /* native-lib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "native-lib.cpp"; path = "cpp/native-lib.cpp"; sourceTree = "<group>"; };
+		01542D6B223D9A0D005CD06B /* nanoflann.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = nanoflann.hpp; path = cpp/nanoflann.hpp; sourceTree = "<group>"; };
+		01542D6D223D9A45005CD06B /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		016593D32210FD13001A8942 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		016593D52210FD1A001A8942 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		016593D72210FD21001A8942 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		016593D92210FD28001A8942 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		016593DB2210FD31001A8942 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		016593E12210FEBE001A8942 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		016593E222110185001A8942 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		016593E42211032B001A8942 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		016593E52211032B001A8942 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		016593E8221103F5001A8942 /* SeniorProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeniorProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		016593ED221105AF001A8942 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = openCV/opencv2.framework; sourceTree = "<group>"; };
+		01B4F8F82201534000E8454B /* SeniorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4F8FB2201534000E8454B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B4F8FD2201534000E8454B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01B4F9002201534000E8454B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01B4F9022201534300E8454B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B4F9052201534300E8454B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B4F9072201534300E8454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01B4F90C2201534300E8454B /* Senior ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senior ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B4F90C2201534300E8454B /* SeniorProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeniorProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4F9102201534300E8454B /* Senior_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senior_ProjectTests.swift; sourceTree = "<group>"; };
 		01B4F9122201534300E8454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01B4F9172201534300E8454B /* Senior ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senior ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B4F9172201534300E8454B /* SeniorProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeniorProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4F91B2201534300E8454B /* Senior_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senior_ProjectUITests.swift; sourceTree = "<group>"; };
 		01B4F91D2201534300E8454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016593EE221105AF001A8942 /* opencv2.framework in Frameworks */,
+				016593DC2210FD31001A8942 /* Accelerate.framework in Frameworks */,
+				016593DA2210FD28001A8942 /* CoreFoundation.framework in Frameworks */,
+				016593D82210FD21001A8942 /* CoreMedia.framework in Frameworks */,
+				016593D62210FD1A001A8942 /* CoreGraphics.framework in Frameworks */,
+				016593D42210FD13001A8942 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,27 +103,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016593D02210FD0B001A8942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016593ED221105AF001A8942 /* opencv2.framework */,
+				016593DB2210FD31001A8942 /* Accelerate.framework */,
+				016593D92210FD28001A8942 /* CoreFoundation.framework */,
+				016593D72210FD21001A8942 /* CoreMedia.framework */,
+				016593D52210FD1A001A8942 /* CoreGraphics.framework */,
+				016593D32210FD13001A8942 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		01B4F8EF2201533F00E8454B = {
 			isa = PBXGroup;
 			children = (
-				01B4F8FA2201534000E8454B /* Senior Project */,
-				01B4F90F2201534300E8454B /* Senior ProjectTests */,
-				01B4F91A2201534300E8454B /* Senior ProjectUITests */,
+				01542D6B223D9A0D005CD06B /* nanoflann.hpp */,
+				01542D6D223D9A45005CD06B /* utils.h */,
+				01542D65223D99C6005CD06B /* native-lib.cpp */,
+				016593E8221103F5001A8942 /* SeniorProject-Bridging-Header.h */,
+				016593E42211032B001A8942 /* OpenCVWrapper.h */,
+				016593E52211032B001A8942 /* OpenCVWrapper.mm */,
+				016593E222110185001A8942 /* Default-568h@2x.png */,
+				016593E12210FEBE001A8942 /* PrefixHeader.pch */,
+				01B4F8FA2201534000E8454B /* SeniorProject */,
+				01B4F90F2201534300E8454B /* SeniorProjectTests */,
+				01B4F91A2201534300E8454B /* SeniorProjectUITests */,
 				01B4F8F92201534000E8454B /* Products */,
+				016593D02210FD0B001A8942 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		01B4F8F92201534000E8454B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01B4F8F82201534000E8454B /* Senior Project.app */,
-				01B4F90C2201534300E8454B /* Senior ProjectTests.xctest */,
-				01B4F9172201534300E8454B /* Senior ProjectUITests.xctest */,
+				01B4F8F82201534000E8454B /* SeniorProject.app */,
+				01B4F90C2201534300E8454B /* SeniorProjectTests.xctest */,
+				01B4F9172201534300E8454B /* SeniorProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		01B4F8FA2201534000E8454B /* Senior Project */ = {
+		01B4F8FA2201534000E8454B /* SeniorProject */ = {
 			isa = PBXGroup;
 			children = (
 				01B4F8FB2201534000E8454B /* AppDelegate.swift */,
@@ -104,33 +155,33 @@
 				01B4F9042201534300E8454B /* LaunchScreen.storyboard */,
 				01B4F9072201534300E8454B /* Info.plist */,
 			);
-			path = "Senior Project";
+			path = SeniorProject;
 			sourceTree = "<group>";
 		};
-		01B4F90F2201534300E8454B /* Senior ProjectTests */ = {
+		01B4F90F2201534300E8454B /* SeniorProjectTests */ = {
 			isa = PBXGroup;
 			children = (
 				01B4F9102201534300E8454B /* Senior_ProjectTests.swift */,
 				01B4F9122201534300E8454B /* Info.plist */,
 			);
-			path = "Senior ProjectTests";
+			path = SeniorProjectTests;
 			sourceTree = "<group>";
 		};
-		01B4F91A2201534300E8454B /* Senior ProjectUITests */ = {
+		01B4F91A2201534300E8454B /* SeniorProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
 				01B4F91B2201534300E8454B /* Senior_ProjectUITests.swift */,
 				01B4F91D2201534300E8454B /* Info.plist */,
 			);
-			path = "Senior ProjectUITests";
+			path = SeniorProjectUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01B4F8F72201534000E8454B /* Senior Project */ = {
+		01B4F8F72201534000E8454B /* SeniorProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01B4F9202201534300E8454B /* Build configuration list for PBXNativeTarget "Senior Project" */;
+			buildConfigurationList = 01B4F9202201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProject" */;
 			buildPhases = (
 				01B4F8F42201534000E8454B /* Sources */,
 				01B4F8F52201534000E8454B /* Frameworks */,
@@ -140,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = "Senior Project";
+			name = SeniorProject;
 			productName = "Senior Project";
-			productReference = 01B4F8F82201534000E8454B /* Senior Project.app */;
+			productReference = 01B4F8F82201534000E8454B /* SeniorProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		01B4F90B2201534300E8454B /* Senior ProjectTests */ = {
+		01B4F90B2201534300E8454B /* SeniorProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01B4F9232201534300E8454B /* Build configuration list for PBXNativeTarget "Senior ProjectTests" */;
+			buildConfigurationList = 01B4F9232201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProjectTests" */;
 			buildPhases = (
 				01B4F9082201534300E8454B /* Sources */,
 				01B4F9092201534300E8454B /* Frameworks */,
@@ -158,14 +209,14 @@
 			dependencies = (
 				01B4F90E2201534300E8454B /* PBXTargetDependency */,
 			);
-			name = "Senior ProjectTests";
+			name = SeniorProjectTests;
 			productName = "Senior ProjectTests";
-			productReference = 01B4F90C2201534300E8454B /* Senior ProjectTests.xctest */;
+			productReference = 01B4F90C2201534300E8454B /* SeniorProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		01B4F9162201534300E8454B /* Senior ProjectUITests */ = {
+		01B4F9162201534300E8454B /* SeniorProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01B4F9262201534300E8454B /* Build configuration list for PBXNativeTarget "Senior ProjectUITests" */;
+			buildConfigurationList = 01B4F9262201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProjectUITests" */;
 			buildPhases = (
 				01B4F9132201534300E8454B /* Sources */,
 				01B4F9142201534300E8454B /* Frameworks */,
@@ -176,9 +227,9 @@
 			dependencies = (
 				01B4F9192201534300E8454B /* PBXTargetDependency */,
 			);
-			name = "Senior ProjectUITests";
+			name = SeniorProjectUITests;
 			productName = "Senior ProjectUITests";
-			productReference = 01B4F9172201534300E8454B /* Senior ProjectUITests.xctest */;
+			productReference = 01B4F9172201534300E8454B /* SeniorProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -193,6 +244,7 @@
 				TargetAttributes = {
 					01B4F8F72201534000E8454B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					01B4F90B2201534300E8454B = {
 						CreatedOnToolsVersion = 10.1;
@@ -204,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01B4F8F32201533F00E8454B /* Build configuration list for PBXProject "Senior Project" */;
+			buildConfigurationList = 01B4F8F32201533F00E8454B /* Build configuration list for PBXProject "SeniorProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +269,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01B4F8F72201534000E8454B /* Senior Project */,
-				01B4F90B2201534300E8454B /* Senior ProjectTests */,
-				01B4F9162201534300E8454B /* Senior ProjectUITests */,
+				01B4F8F72201534000E8454B /* SeniorProject */,
+				01B4F90B2201534300E8454B /* SeniorProjectTests */,
+				01B4F9162201534300E8454B /* SeniorProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B4F9062201534300E8454B /* LaunchScreen.storyboard in Resources */,
+				016593E322110185001A8942 /* Default-568h@2x.png in Resources */,
 				01B4F9032201534300E8454B /* Assets.xcassets in Resources */,
 				01B4F9012201534000E8454B /* Main.storyboard in Resources */,
 			);
@@ -258,6 +311,8 @@
 			files = (
 				01B4F8FE2201534000E8454B /* ViewController.swift in Sources */,
 				01B4F8FC2201534000E8454B /* AppDelegate.swift in Sources */,
+				01542D66223D99C6005CD06B /* native-lib.cpp in Sources */,
+				016593E62211032B001A8942 /* OpenCVWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +337,12 @@
 /* Begin PBXTargetDependency section */
 		01B4F90E2201534300E8454B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 01B4F8F72201534000E8454B /* Senior Project */;
+			target = 01B4F8F72201534000E8454B /* SeniorProject */;
 			targetProxy = 01B4F90D2201534300E8454B /* PBXContainerItemProxy */;
 		};
 		01B4F9192201534300E8454B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 01B4F8F72201534000E8454B /* Senior Project */;
+			target = 01B4F8F72201534000E8454B /* SeniorProject */;
 			targetProxy = 01B4F9182201534300E8454B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -349,10 +404,12 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/rossspencer/Documents/SeniorProject/openCV/opencv2.framework;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -363,12 +420,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -410,19 +469,23 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/rossspencer/Documents/SeniorProject/openCV/opencv2.framework;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,14 +495,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Senior Project/Info.plist";
+				DEVELOPMENT_TEAM = MKX85Q9F8V;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/openCV";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SeniorProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossspencer.Senior-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Documents/SeniorProject/SeniorProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,14 +519,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Senior Project/Info.plist";
+				DEVELOPMENT_TEAM = MKX85Q9F8V;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/openCV";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SeniorProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossspencer.Senior-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Documents/SeniorProject/SeniorProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -478,7 +554,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senior Project.app/Senior Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeniorProject.app/SeniorProject";
 			};
 			name = Debug;
 		};
@@ -498,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senior Project.app/Senior Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeniorProject.app/SeniorProject";
 			};
 			name = Release;
 		};
@@ -543,7 +619,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01B4F8F32201533F00E8454B /* Build configuration list for PBXProject "Senior Project" */ = {
+		01B4F8F32201533F00E8454B /* Build configuration list for PBXProject "SeniorProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01B4F91E2201534300E8454B /* Debug */,
@@ -552,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01B4F9202201534300E8454B /* Build configuration list for PBXNativeTarget "Senior Project" */ = {
+		01B4F9202201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01B4F9212201534300E8454B /* Debug */,
@@ -561,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01B4F9232201534300E8454B /* Build configuration list for PBXNativeTarget "Senior ProjectTests" */ = {
+		01B4F9232201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01B4F9242201534300E8454B /* Debug */,
@@ -570,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01B4F9262201534300E8454B /* Build configuration list for PBXNativeTarget "Senior ProjectUITests" */ = {
+		01B4F9262201534300E8454B /* Build configuration list for PBXNativeTarget "SeniorProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01B4F9272201534300E8454B /* Debug */,
