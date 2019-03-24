@@ -30,6 +30,14 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
+    
+    @IBOutlet weak var maturityLevel: UILabel!
+    @IBAction func classify(_ sender: UIButton) {
+        
+        print("Something To Print1");
+        maturityLevel.text = OpenCVWrapper.classifyPeanut(peanutImageView.image!)
+        print("Something To Print2");
+    }
 
 }
 

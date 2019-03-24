@@ -20,6 +20,14 @@ NS_ASSUME_NONNULL_BEGIN
 //gets greyscale version of image
 + (UIImage *) makeGray: (UIImage *) image;
 
+//#if defined(__cplusplus)
+//extern "C" {
+//#endif
++ (NSString *)classifyPeanut:(UIImage *)image ;
+//#if defined(__cplusplus)
+//}
+//#endif
+
 @end
 
 NS_ASSUME_NONNULL_END
