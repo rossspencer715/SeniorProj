@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013511E7224C4EC3003F8AD5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013511E6224C4EC3003F8AD5 /* opencv2.framework */; };
+		013511E9224C5570003F8AD5 /* g_avg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013511E8224C5570003F8AD5 /* g_avg.txt */; };
+		013511EB224C5583003F8AD5 /* r_avg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013511EA224C5583003F8AD5 /* r_avg.txt */; };
+		013511ED224C5594003F8AD5 /* b_avg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013511EC224C5594003F8AD5 /* b_avg.txt */; };
+		013511EF224C55A7003F8AD5 /* label.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013511EE224C55A6003F8AD5 /* label.txt */; };
 		01542D66223D99C6005CD06B /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01542D65223D99C6005CD06B /* native-lib.cpp */; };
 		016593D42210FD13001A8942 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D32210FD13001A8942 /* AssetsLibrary.framework */; };
 		016593D62210FD1A001A8942 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593D52210FD1A001A8942 /* CoreGraphics.framework */; };
@@ -15,7 +20,6 @@
 		016593DC2210FD31001A8942 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593DB2210FD31001A8942 /* Accelerate.framework */; };
 		016593E322110185001A8942 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016593E222110185001A8942 /* Default-568h@2x.png */; };
 		016593E62211032B001A8942 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 016593E52211032B001A8942 /* OpenCVWrapper.mm */; };
-		016593EE221105AF001A8942 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016593ED221105AF001A8942 /* opencv2.framework */; };
 		01B4F8FC2201534000E8454B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4F8FB2201534000E8454B /* AppDelegate.swift */; };
 		01B4F8FE2201534000E8454B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4F8FD2201534000E8454B /* ViewController.swift */; };
 		01B4F9012201534000E8454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B4F8FF2201534000E8454B /* Main.storyboard */; };
@@ -43,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013511E6224C4EC3003F8AD5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		013511E8224C5570003F8AD5 /* g_avg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g_avg.txt; sourceTree = "<group>"; };
+		013511EA224C5583003F8AD5 /* r_avg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = r_avg.txt; sourceTree = "<group>"; };
+		013511EC224C5594003F8AD5 /* b_avg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b_avg.txt; sourceTree = "<group>"; };
+		013511EE224C55A6003F8AD5 /* label.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = label.txt; sourceTree = "<group>"; };
 		01542D65223D99C6005CD06B /* native-lib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "native-lib.cpp"; path = "cpp/native-lib.cpp"; sourceTree = "<group>"; };
 		01542D6B223D9A0D005CD06B /* nanoflann.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = nanoflann.hpp; path = cpp/nanoflann.hpp; sourceTree = "<group>"; };
 		01542D6D223D9A45005CD06B /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		016593E42211032B001A8942 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		016593E52211032B001A8942 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		016593E8221103F5001A8942 /* SeniorProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeniorProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		016593ED221105AF001A8942 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = openCV/opencv2.framework; sourceTree = "<group>"; };
 		01B4F8F82201534000E8454B /* SeniorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4F8FB2201534000E8454B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B4F8FD2201534000E8454B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				016593EE221105AF001A8942 /* opencv2.framework in Frameworks */,
+				013511E7224C4EC3003F8AD5 /* opencv2.framework in Frameworks */,
 				016593DC2210FD31001A8942 /* Accelerate.framework in Frameworks */,
 				016593DA2210FD28001A8942 /* CoreFoundation.framework in Frameworks */,
 				016593D82210FD21001A8942 /* CoreMedia.framework in Frameworks */,
@@ -103,10 +111,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013511F0224C55C6003F8AD5 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				013511EE224C55A6003F8AD5 /* label.txt */,
+				013511EA224C5583003F8AD5 /* r_avg.txt */,
+				013511E8224C5570003F8AD5 /* g_avg.txt */,
+				013511EC224C5594003F8AD5 /* b_avg.txt */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
 		016593D02210FD0B001A8942 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				016593ED221105AF001A8942 /* opencv2.framework */,
+				013511E6224C4EC3003F8AD5 /* opencv2.framework */,
 				016593DB2210FD31001A8942 /* Accelerate.framework */,
 				016593D92210FD28001A8942 /* CoreFoundation.framework */,
 				016593D72210FD21001A8942 /* CoreMedia.framework */,
@@ -125,6 +144,7 @@
 				016593E8221103F5001A8942 /* SeniorProject-Bridging-Header.h */,
 				016593E42211032B001A8942 /* OpenCVWrapper.h */,
 				016593E52211032B001A8942 /* OpenCVWrapper.mm */,
+				013511F0224C55C6003F8AD5 /* Documents */,
 				016593E222110185001A8942 /* Default-568h@2x.png */,
 				016593E12210FEBE001A8942 /* PrefixHeader.pch */,
 				01B4F8FA2201534000E8454B /* SeniorProject */,
@@ -281,10 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013511ED224C5594003F8AD5 /* b_avg.txt in Resources */,
 				01B4F9062201534300E8454B /* LaunchScreen.storyboard in Resources */,
 				016593E322110185001A8942 /* Default-568h@2x.png in Resources */,
 				01B4F9032201534300E8454B /* Assets.xcassets in Resources */,
 				01B4F9012201534000E8454B /* Main.storyboard in Resources */,
+				013511EB224C5583003F8AD5 /* r_avg.txt in Resources */,
+				013511E9224C5570003F8AD5 /* g_avg.txt in Resources */,
+				013511EF224C55A7003F8AD5 /* label.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +522,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKX85Q9F8V;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/openCV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/openCV",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = SeniorProject/Info.plist;
@@ -508,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossspencer.Senior-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Documents/SeniorProject/SeniorProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Downloads/SeniorProj/SeniorProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,7 +549,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKX85Q9F8V;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/openCV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/openCV",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = SeniorProject/Info.plist;
@@ -532,7 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossspencer.Senior-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Documents/SeniorProject/SeniorProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rossspencer/Downloads/SeniorProj/SeniorProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
