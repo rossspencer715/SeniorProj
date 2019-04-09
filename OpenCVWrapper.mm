@@ -745,6 +745,7 @@ std::vector<float> classify(std::vector<double> avg, std::vector<double> r_avg_a
  }*/
 
 + (NSString *)classifyPeanut:(UIImage *)image {
+    
     //transform UIImage to cv::mat
     cv::Mat imageMat;
     UIImageToMat(image, imageMat);
@@ -810,7 +811,6 @@ std::vector<float> classify(std::vector<double> avg, std::vector<double> r_avg_a
         }
     }
     
-    return [NSString stringWithUTF8String:str.c_str()];
 }
 
 

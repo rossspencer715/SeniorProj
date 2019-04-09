@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var peanutImageView: UIImageView!
     @IBOutlet weak var openCVVersionLabel: UILabel!
@@ -29,6 +29,45 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
+    }
+    @IBAction func importImage(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary){
+            let image = UIImagePickerController()
+            image.delegate = self
+            image.sourceType = .photoLibrary
+            image.allowsEditing = false
+            self.present(image, animated: true){
+                //image is imported
+            }
+        }
+        else{
+            //ERROR
+        }
+    }
+    
+    @IBAction func takePicture(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera){
+            let image = UIImagePickerController()
+            image.delegate = self
+            image.sourceType = .camera
+            image.allowsEditing = false
+            self.present(image, animated: false, completion: nil)
+        }
+        else{
+            print("oopsies")
+            //ERROR
+        }
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            peanutImageView.image = image
+        }
+        else{
+            print("hmm")
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBOutlet weak var maturityLevel: UILabel!

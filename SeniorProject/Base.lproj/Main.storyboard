@@ -32,14 +32,14 @@
                                 <rect key="frame" x="157" y="364" width="100" height="30"/>
                                 <state key="normal" title="Take a Picture"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ij-Wx-WbF"/>
+                                    <action selector="takePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Bz-C8-Wds"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-B4-NTE">
                                 <rect key="frame" x="157" y="445" width="100" height="30"/>
                                 <state key="normal" title="Select a Photo"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4J-Q1-3EC"/>
+                                    <action selector="importImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4i-1u-3tC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-y6-gBd">
@@ -48,7 +48,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OR-9" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-hE-Bqs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BR-2" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-hE-Bqs">
                                 <rect key="frame" x="87" y="190" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -107,6 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="OR-9" width="72" height="136.08000183105469"/>
+        <image name="BR-2" width="72" height="136.08000183105469"/>
     </resources>
 </document>
