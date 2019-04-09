@@ -746,6 +746,7 @@ std::vector<float> classify(std::vector<double> avg, std::vector<double> r_avg_a
 
 + (NSString *)classifyPeanut:(UIImage *)image {
     
+    try{
     //transform UIImage to cv::mat
     cv::Mat imageMat;
     UIImageToMat(image, imageMat);
@@ -811,6 +812,28 @@ std::vector<float> classify(std::vector<double> avg, std::vector<double> r_avg_a
         }
     }
     
+    return [NSString stringWithUTF8String:str.c_str()];
+    }
+    catch (const std::overflow_error& e) {
+        std::cout << "Overflow error.\n";
+        std::string err = "Error: not detected as a peanut.";
+        return [NSString stringWithUTF8String:err.c_str()];
+    }
+    catch (const std::runtime_error& e) {
+        std::cout << "Runtime error.\n";
+        std::string err = "Error: not detected as a peanut.";
+        return [NSString stringWithUTF8String:err.c_str()];
+    }
+    catch (const std::exception& e) {
+        std::cout << "Logic error.\n";
+        std::string err = "Error: not detected as a peanut.";
+        return [NSString stringWithUTF8String:err.c_str()];
+    }
+    catch (...) {
+        std::cout << "Generic error.\n";
+        std::string err = "Error: not detected as a peanut.";
+        return [NSString stringWithUTF8String:err.c_str()];
+    }
 }
 
 
