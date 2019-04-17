@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 //}
 //#endif
 
++ (UIImage*)resizeImage:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END

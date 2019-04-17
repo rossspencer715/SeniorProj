@@ -52,9 +52,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             image.sourceType = .camera
             image.allowsEditing = false
             self.present(image, animated: false, completion: nil)
+            //guard let imageResult = peanutImageView.image else { return }
+            //let newImage = OpenCVWrapper.resize(imageResult)
+            //peanutImageView.image = newImage
+            
         }
         else{
-            print("oopsies")
+            print("ERROR: Couldn't access camera")
             //ERROR
         }
         
@@ -65,7 +69,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             peanutImageView.image = image
         }
         else{
-            print("hmm")
+            print("ERROR: couldn't select photo")
         }
         self.dismiss(animated: true, completion: nil)
     }
@@ -73,9 +77,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var maturityLevel: UILabel!
     @IBAction func classify(_ sender: UIButton) {
         
-        print("Something To Print1");
         maturityLevel.text = OpenCVWrapper.classifyPeanut(peanutImageView.image!)
-        print("Something To Print2");
     }
 
 }
